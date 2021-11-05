@@ -1,0 +1,78 @@
+    input,body,p,span,button{font-size: 20px;}
+    body{
+        padding:0 auto;
+        margin:0 auto;
+        font-style:oblique;
+        color:#4f757c;
+        background-color:#6797A1;
+    }
+    p{
+        padding:0 auto;
+        margin:0 auto;
+    }
+    .task{color:#F2F8EA}
+    input{
+        
+        border-color: rgb(177, 174, 170);
+        border-radius: 5px;
+        border-width: 3px;
+        margin: 10px;
+        padding:10px;
+    }
+    input:focus{
+        outline:none;
+        border-color:#4ae2ce;
+    }
+    .converter{
+        display:block;
+        width: 450px;
+        background-color:#FABFA1;
+        margin:0 auto;
+        padding: 30px;
+    }
+    .btn{ 
+        margin:10px;
+        padding: 5px;
+        border-radius: 5px;
+        border-width: 3px;
+        background-color:#ECEFA9;
+    }
+    .btn:hover{
+        background: rgb(69, 185, 127);
+    }
+    .btn:active{
+        background: rgb(90, 196, 143);
+        box-shadow: 0 5px rgba(83, 156, 120, 0.63) inset;
+        color:white;
+    }
+    .check{
+        margin:0 auto;
+        width: 300px;
+        height: 400px;
+        display:block;
+        background-color: #FABFA1;;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper{
+        display:flex;
+    }
+    #correct{
+        margin-left:20px;
+        margin-top: 10px;
+        color:green;
+        font-weight: 600;
+    }
+    #wrong{
+        margin-left:20px;
+        color:red;
+        font-weight: 600;
+    }
+    span{
+    padding-left: 20px;
+    }
+    .left{
+        padding-left: 200px;
+    }

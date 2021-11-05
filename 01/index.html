@@ -1,0 +1,54 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Converter+Login/Password</title>
+    </head>
+    <body>
+        <div class="wrapper">
+    <p class="task"> 1. Calculate </p>
+    <div class="converter">
+        <h1> CONVERTER </h1>
+        <p> Enter the number to convert</p>
+        <p> &#36; </p>
+        <input id="input_dol" type="number" min="0" placeholder="&#36;" />
+        <button class="btn" onclick="moneyConverterUSD()"> Calculate </button>
+    <p class="left" > &#8372; <span id="output_grn1">    </span> </p>
+
+    <p> &#8364; </p>
+    <input id="input_evro" type="number" min="0" placeholder="&#8364;" />
+        <button class="btn" onclick="moneyConverterEUR()"> Calculate </button>
+    <p  class="left"> &#8372;<span id="output_grn2">  </span> </p>
+    
+    <p > Złoty </p>
+        <input id="input_zloty" type="number" min="0" placeholder="Złoty" />
+        <button class="btn" onclick="moneyConverterPLN()"> Calculate </button>
+    <p class="left">  &#8372; <span id="output_grn3"> </span> </span>
+
+    <p>  &#8383; </p>
+    <input id="input_bitcoin" type="number" min="0" placeholder="&#8383;" />
+    <button class="btn" onclick="moneyConverterBitcoin()"> Calculate </button>
+    <p class="left">  &#8372; <span id="output_grn4"> </span> </p>
+    </div>
+    
+    <p class="task"> 2. Check the login and password</p>
+    <div class="check"> 
+        <h1> CHECK </h1>
+        <p> Enter the login and password</p>
+        <form  id="form_input" >
+        <input id="login" type="text"  minlength="4" maxlength="15" required placeholder="login" />
+        <input id="password" type="password"   minlength="4"  required placeholder="password" />
+        </form>
+        <div class="wrapper">
+        <button  class="btn" form="form_input" type="submit"  >Data validation </button>
+        <button  class="btn" type="button "  onclick="check()"  > Check the login and password </button>
+     </div>
+    <div id="correct"> </div>
+    <div id="wrong"> </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+    </html>
