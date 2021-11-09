@@ -1,0 +1,61 @@
+ /*body{
+    /* background-color: aqua; */
+}
+img{
+    /* background-clip: padding-box;
+    background: #fff;
+    border: black;
+    border-width: 100px; 
+    border-style: dashed;
+    vertical-align:bottom;
+} */
+
+
+/* .col { 
+    background: #f0f0f0; /* Цвет фона */
+    width: 230px; /* Ширина блока */
+    padding: 10px; /* Поля */
+    font-size: 1.5em; /* Размер шрифта */
+    word-wrap: break-all; /* Перенос слов */ 
+    line-height: 10em;
+}
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+a[href^='https://'] {
+    color: red;
+    font-size: 30px;
+}*/
+
+.holder:last-of-type{
+color:black;
+} 
+
+.bg{
+    display:block;
+    text-align: center;
+    /* width: 500px;
+    height: 400px;
+    background-image: url("img/1.jpg") ; */
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    background-image: url("img/1.jpg"),url("img/2.png"),url("img/3.png"),url("img/4.png"),url("img/5.png"); 
+    background-size:300px,150px,40px,40px,40px;
+    background-repeat: no-repeat,repeat-x, repeat-x,repeat-y, repeat-y;
+    background-position: center,bottom,top,left, right;
+}
