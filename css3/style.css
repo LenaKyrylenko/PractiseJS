@@ -1,0 +1,81 @@
+.wrapper {
+    overflow-x: hidden;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu {
+    margin-top: 230px;
+    width: 20%;
+    height: 50vh;
+    background: rgb(245, 142, 104);
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    cursor: pointer;
+    transform: translateX(-90%);
+}
+
+.menu:hover {
+    transform: translateX(0%);
+    transition: 2s;
+    background: rgb(192, 81, 40);
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}
+
+.menu-list a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu-list a:hover {
+    color: yellow;
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translateY(0)
+    }
+    25% {
+        transform: translateY(200px)
+    }
+    50% {
+        transform: translate(200px, 200px)
+    }
+    75% {
+        transform: translate(200px, 0px)
+    }
+}
+
+@keyframes change_color {
+    0% {
+        background: rgba(255, 0, 0, 0.925)
+    }
+    25% {
+        background: rgba(17, 0, 255, 0.5)
+    }
+    50% {
+        background: rgba(21, 255, 0, 0.5)
+    }
+    75% {
+        background: rgba(255, 208, 0, 0.938)
+    }
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: rgb(167, 47, 47);
+    animation: bouncing 2s cubic-bezier(0.5, 0.5, 0.5, 0.5) 2s infinite, change_color 2s cubic-bezier(0.5, 0.5, 0.5, 0.5) 2s infinite;
+}
