@@ -40,8 +40,7 @@ function numDivide() {
 //2 number: odd
 function numCheck() {
     let numb = Number(prompt(' Введите число ', ''));
-    if (typeof (numb) === 'number') { numb % 2 === 0 ? alert('четное число') : alert('нечетное число'); }
-    else {
+    if (typeof(numb) === 'number') { numb % 2 === 0 ? alert('четное число') : alert('нечетное число'); } else {
         alert('введено не корректное число!')
     }
 }
@@ -69,7 +68,7 @@ function checkString() {
 function boolConfirm() {
     let name = prompt('Введите свое имя ', '');
     let frontend = confirm(`${name}, ты хочешь стать frontend-разработчиком?`);
-    if (frontend)// true, если нажата OK
+    if (frontend) // true, если нажата OK
     { alert('Учи js!!!'); }
 }
 //boolConfirm();
@@ -219,7 +218,7 @@ function compSizeIf() {
                     alert("XL")
                 else {
                     if (size == 54)
-                        alert("XL")
+                        alert("XXL")
 
                     else {
                         if (size % 2 != 0)
@@ -255,7 +254,7 @@ function ComparisonSizeObject() {
         50: "L",
         52: "XL",
         54: "XXL",
-        56: "XXL"
+        56: "XXXL"
     }
 
     let stockingsAndSocks = {
@@ -270,21 +269,18 @@ function ComparisonSizeObject() {
     let choise = (prompt("Выберите категорию для перевода размеров\n1) одежда\n2) женское белье\n3) чулки и носки\n(введите 1, 2 или 3)", ""));
     if (choise == "1") {
         let size = parseInt(prompt("Введите размер от 40 до 54", ""));
-        ((size < 40) || (size > 54)) ? alert("Вы ввели не корректный диапазон") : ((size % 2 != 0) ? alert("Вы ввели нечетное число, такого размера нету") : alert("Американский размер - " + sizeWomenClothes[size]));
+        ((size < 40) || (size > 54)) ? alert("Вы ввели не корректный диапазон"): ((size % 2 != 0) ? alert("Вы ввели нечетное число, такого размера нету") : alert("Американский размер - " + sizeWomenClothes[size]));
 
-    }
-    else {
+    } else {
         if (choise == "2") {
             let size = parseInt(prompt("Введите размер от 42 до 56", ""));
-            ((size < 42) || (size > 56)) ? alert("Вы ввели не корректный диапазон") : ((size % 2 != 0) ? alert("Вы ввели нечетное число, такого размера нету") : alert("Американский размер - " + sizeWomenLinen[size]));
-        }
-        else {
+            ((size < 42) || (size > 56)) ? alert("Вы ввели не корректный диапазон"): ((size % 2 != 0) ? alert("Вы ввели нечетное число, такого размера нету") : alert("Американский размер - " + sizeWomenLinen[size]));
+        } else {
             if (choise == "3") {
                 let size = parseInt(prompt("Введите размер от 21 до 27", ""));
-                ((size < 21) || (size > 27)) ? alert("Вы ввели не корректный диапазон") : alert("Американский размер - " + stockingsAndSocks[size]);
+                ((size < 21) || (size > 27)) ? alert("Вы ввели не корректный диапазон"): alert("Американский размер - " + stockingsAndSocks[size]);
 
-            }
-            else {
+            } else {
                 alert("Вы ввели некорректный вариант");
             }
         }
@@ -295,7 +291,7 @@ function ComparisonSizeObject() {
 //ComparisonObject();
 function tern() {
     let sex = confirm("у вас женский пол? ");
-    (sex) ? alert("вы женщина!") : alert("вы мужчина :)");
+    (sex) ? alert("вы женщина!"): alert("вы мужчина :)");
 }
 //tern();
 function flats() {
