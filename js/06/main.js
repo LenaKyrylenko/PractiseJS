@@ -78,9 +78,9 @@ function greetAll2() {
     for (let arg of arguments) {
         array[array.length] = (`${arg}`);
     }
-    return ("Hello " + array);
+    return alert("Hello " + array);
 }
-//alert(greetAll2("Superman", "SpiderMan", "Captain Obvious")) // выводит alert "Hello Superman, SpiderMan, Captain Obvious"
+//greetAll2("Superman", "SpiderMan", "Captain Obvious") // выводит alert "Hello Superman, SpiderMan, Captain Obvious"
 //1 вариант
 function sum() {
     let args = 0;
@@ -129,7 +129,7 @@ function sum3Sample() {
 }
 
 function intRandomSample() {
-    console.log('целое случайное число = ', intRandom(2, 15)) // возвращает целое случайное число от 2 до 15 (включительно)
+    console.log('целое случайное число от 2 до 15 = ', intRandom(2, 15)) // возвращает целое случайное число от 2 до 15 (включительно)
 }
 
 function greetAllSample() {
@@ -138,7 +138,7 @@ function greetAllSample() {
 }
 
 function sumSample() {
-    console.log('сумма = ', sum(10, 20, 40, 100)) // => 170
+    console.log('сумма чисел 10, 20, 40, 100 = ', sum(10, 20, 40, 100)) // => 170
 
 }
 //Union
