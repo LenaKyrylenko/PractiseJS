@@ -1,0 +1,63 @@
+table {
+    border-collapse: collapse;
+    background: rgb(239, 239, 243);
+}
+
+td {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+.backcolor {
+    background: rgb(107, 220, 224);
+}
+
+body {
+    padding: 0 auto;
+    margin: 0 auto;
+    color: #dbe7e9;
+    background-color: #6797A1;
+}
+
+p {
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+.task {
+    color: #F2F8EA
+}
+
+input {
+    display: block;
+    border-color: rgb(177, 174, 170);
+    border-radius: 5px;
+    border-width: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4ae2ce;
+}
+
+.btn {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: #ECEFA9;
+}
+
+.btn:hover {
+    background: rgb(69, 185, 127);
+}
+
+.btn:active {
+    background: rgb(90, 196, 143);
+    box-shadow: 0 5px rgba(83, 156, 120, 0.63) inset;
+    color: white;
+}
