@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        Static File Index.HTML
+    </title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js'></script>
+</head>
+
+<body>
+
+    <div id='formContainer'>
+    <input type="nick" name="nick" placeholder="nick" id="nick">
+    <input type="message" name="message" placeholder="message" id="message">
+    <button id="send" onclick="myFunction()"> SEND </button>
+    </div>
+    <script>
+        const socket = io()
+        socket.on('msg', msg => console.log(msg))
+
+        let div = document.createElement("div")
+        let img = document.createElement("img")
+        const youtubeRegexp = /http(?:s?):\/\/(?:www\.)?youtu(?:be\.com\/watch\?v=|\.be\/)([\w\-\_]*)(&(amp;)?‌​[\w\?‌​=]*)?/;
+        const imageRegexp = /^ftp|http|https?:\/\/(?:[a-z\-]+\.)+[a-z]{2,6}(?:\/[^\/#?]+)+\.(?:jpe?g|gif|png)$/ig
+
+        function myFunction() {
+            var nick = document.getElementById('nick').value;
+            var message = document.getElementById('message').value;
+            if (message.match(youtubeRegexp)) {
+                div.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${message.match(youtubeRegexp)[1]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+                document.body.append(div)
+
+            } else
+            if (message.match(imageRegexp)) {
+                //вышло с метчем сравнить ссылку на картинку 
+                //тут смешная картинка, которая отобразится на сервере :D
+                //http://risovach.ru/upload/2016/04/mem/kogda-s-dedom_112267989_orig_.jpg
+                console.log("match image!")
+                img.src = `${message}`
+                document.body.append(img)
+            } else {
+                socket.emit('msg', {
+                    nick: nick,
+                    message: message
+                })
+            }
+
+        }
+        socket.on('msg', msg => {
+
+            var div_nick = document.createElement("div");
+            div_nick.style.cssText = `color: black ;
+    background-color: yellow;
+    width: 100px;
+    text-align: center;
+  `;
+
+            div_nick.innerHTML = ("<b>" + msg.nick + "</b>" + ": " + msg.message)
+            document.body.append(div_nick)
+        })
+    </script>
+
+</body>
+
+</html>
