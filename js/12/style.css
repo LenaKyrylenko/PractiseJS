@@ -1,0 +1,49 @@
+h2 {
+    text-align: center;
+}
+
+body {
+    text-align: center;
+    font-size: medium;
+    font-family: Verdana
+}
+
+table {
+    margin-top: 30px;
+    text-align: center;
+    background-color: rgb(239, 248, 223);
+    color: rgb(6, 58, 55);
+}
+
+input {
+    font-size: medium;
+    font-family: Verdana
+}
+
+button {
+    font-size: medium;
+    font-family: Verdana
+}
+
+option {
+    font-size: medium;
+    font-family: Verdana
+}
+
+th {
+    border-style: solid;
+    padding: 10px;
+    text-align: center;
+}
+
+tr {
+    border-style: double;
+    padding: 5px;
+    text-align: center;
+}
+
+td {
+    border-style: double;
+    padding: 5px;
+    text-align: center;
+}
