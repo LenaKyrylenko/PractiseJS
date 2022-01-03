@@ -1,0 +1,22 @@
+body {
+    font-size: medium;
+    font-family: Verdana;
+    margin: 10px;
+}
+
+table {
+    margin-top: 100px;
+    background-color: rgb(239, 248, 223);
+    color: rgb(6, 58, 55);
+    border-style: double;
+}
+
+tr {
+    border-style: double;
+    padding: 10px;
+}
+
+td {
+    border-style: double;
+    padding: 5px;
+}
