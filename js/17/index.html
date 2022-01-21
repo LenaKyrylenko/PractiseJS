@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> SHOP </title>
+        <meta charset='utf8' />
+        <style>
+            body{
+                font-size: medium;
+                font-family: serif;
+                margin: 10px;
+                padding: 10px; 
+                color: rgb(6, 58, 55);
+                background-color: rgb(204, 241, 255);
+            }
+            h1{
+                color: rgb(19, 98, 104)
+            }
+            span {
+      color:  rgb(19, 98, 104)
+            }
+            strong{
+                text-align: center;
+                font-size: bold;
+                background:#feffc4;
+                color: #051d05;
+                padding: 3px;
+                margin: 50px 0;
+                text-align: center; 
+            }
+            #mainContainer {
+                display: flex;
+                background-color: rgba(255, 255, 255, 0.76);
+            }
+            #aside {
+                width: 30%;
+            }
+            
+            #aside > a{
+                display: block;
+            }
+            .btn {
+                display: inline-block;
+                vertical-align: middle;
+                float: right;
+                background-color: rgb(236, 206, 245);
+                border-radius: 10px;
+                padding: 20px;
+                margin-left: 10px
+            }
+            img{
+                width: 40%;
+                height: 40%;
+            }
+            a{ 
+                font-weight: bold;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                color: rgb(53, 40, 40);
+                text-decoration: none;
+                  padding-bottom: 2px;
+    
+            }
+            a:hover{
+                border-bottom: 4px solid rgb(130, 30, 180);
+                text-decoration: underline;
+                color: rgb(95, 23, 131);
+            }
+            
+            input {
+                display: flex;
+                flex-direction: column;
+                border: 2px solid rgb(9, 52, 71);
+                border-radius: 4px;
+                margin: 10px;
+                padding: 10px;
+            }
+
+            input[type=text]:focus {
+                background-color: rgb(131, 187, 206);
+            }
+
+            button {
+                margin: 10px;
+                padding: 10px;
+               
+                cursor: pointer;
+                border-radius: 50px;
+                text-align: center;
+                background-color: rgb(156, 255, 153);
+             
+            }
+
+            button:hover {
+                box-shadow: 0 12px 16px 0 rgba(31, 240, 12, 0.452);
+            }
+            button.deleteBtn{
+               
+                background-color: rgb(185, 31, 25);
+                color:white;
+                
+            }
+            
+            .deleteBtn:hover {
+                box-shadow: 0 12px 16px 0 rgba(240, 12, 12, 0.452);
+            }
+            .cart{
+               /* display: flex;
+                flex-direction: row;
+               
+                justify-content: flex-start;
+                margin: 20px;
+                padding: 15px; */
+                margin-bottom: 20px;
+            }
+            .forCart{
+                width: 30%;
+                height: 30%;
+            }
+            .count{
+                display: inline-flex;
+                width:10%;
+                height: 10%;
+            }
+            .order{
+                width: 100%;
+            }
+
+            .clear{
+                background-color: rgb(66, 70, 73);
+                color:white;  
+            }
+            .clear:hover {
+                box-shadow: 0 12px 16px 0 rgba(63, 59, 59, 0.452);
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id='cartIcon'></div>
+            <a id="signIn" class ="btn" href = "#/login/" > Sign In </a>
+            <a id = "register" class="btn" href = "#/register/" > Register</a>
+            <a id = "logOut" class="btn" href = "#/logout/" > Log Out</a>
+            <a id = "cart" class="btn" href = "#/cart/" > Cart </a>
+            <a id = "dashboard" class="btn" href = "#/dashboard/" > Dashboard </a>
+        </header>
+        <div id='mainContainer'>
+            <aside id='aside'>
+                Категории
+            </aside>
+            <main id='main'>
+                Контент
+            </main>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
