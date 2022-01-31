@@ -143,7 +143,9 @@ const actionOrders = () =>
         count
         total
         good {
-          name
+          name images {
+            url
+        }
           categories {
             name
           }
@@ -523,10 +525,9 @@ store.subscribe(() => {
           card.innerHTML += `<h2> * ${orders?.payload[elem]?.orderGoods[elem2].good?.name}</h2>  
                               <h3> Цена: ${orders?.payload[elem]?.orderGoods[elem2]?.price} </h3>  
                               <h3> Количество: ${orders?.payload[elem]?.orderGoods[elem2]?.count} </h3>
+                             <img src="${backendURL}/${orders?.payload[elem]?.orderGoods[elem2]?.good?.images[0]?.url}" alt="тут должна быть фотка товара заказа" />
                                `;
-
-         // console.log(orders?.payload[elem]?.orderGoods[elem2].good?.name);
-        }
+        } 
         main.append(card);
         let num2 = document.createElement("p");
         num2.innerHTML = `<span> Общая сумма заказа: ${orders?.payload[elem].total} </span>`;
