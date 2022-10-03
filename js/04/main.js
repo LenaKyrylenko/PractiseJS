@@ -11,7 +11,6 @@ function htmlTree() {
     //     </div>
     // </body>
 
-
     var body = {
         tagName: 'body',
         subTags: [{
