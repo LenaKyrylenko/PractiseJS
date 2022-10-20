@@ -1,13 +1,13 @@
 # PractiseJS
 
-##Practise tasks in CSS, JS, GraphQL
+## Practise tasks in CSS, JS, GraphQL
 
 
-##CSS:
+## CSS:
 
    -CSS1,CSS2,CSS3
    
- ##JS:
+ ## JS:
 
    -variables, objects, functions, structure and loop
    
